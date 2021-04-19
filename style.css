@@ -89,7 +89,7 @@ footer {
         width: 100%;
     }
     .col{
-        display: inline;
+        flex: none;
         flex-shrink: 0;
     }
 }
