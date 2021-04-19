@@ -69,27 +69,49 @@ footer {
     width: 5px;
     background-color: white;
 }
-
+.easteregg{
+    font-size: .03rem;
+}
 @media (max-width: 1030px){
     img{
         display: none;
     }
+    footer{
+        display: flex;
+    }
     .footersection{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         font-size: .9rem;
         width: 100%;
     }
-    .footersection:not(:last-of-type){
+    .footersection:nth-of-type(2){
         display: none;
     }
     .footersection::after{
         width: 0 !important;
     }
-    .linklist:last-of-type{
+    .linklist{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
     .col{
         flex: none;
         flex-shrink: 0;
+    }
+}
+@media (max-width:420px){
+    .footersection:nth-of-type(3){
+        display: none;
+    }
+}
+@media (max-width:300px){
+    .footersection{
+        display: none;
     }
 }
