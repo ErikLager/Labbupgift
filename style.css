@@ -69,9 +69,6 @@ footer {
     width: 5px;
     background-color: white;
 }
-.easteregg{
-    font-size: .03rem;
-}
 @media (max-width: 1030px){
     img{
         display: none;
